@@ -7,6 +7,7 @@ import { FlatCompat } from "@eslint/eslintrc";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -22,7 +23,8 @@ const config = [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   ...compat.extends("next/core-web-vitals"),
-  {rules: {
+  eslintConfigPrettier,
+  { rules: {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
