@@ -31,6 +31,7 @@ const config: Config = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/app/**', // should be tested in e2e
+    '!src/**/*.stories.tsx',
   ],
 
   // The directory where Jest should output its coverage files

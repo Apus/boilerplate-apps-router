@@ -18,6 +18,7 @@ const compat = new FlatCompat({
 })
 const config = [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
+  { ignores: ["generators/"] },
   { languageOptions: { globals: globals.browser } },
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
