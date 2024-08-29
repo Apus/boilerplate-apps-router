@@ -1,5 +1,6 @@
 {
   "bracketSameLine": true,
+  "experimentalTernaries": true,
   "semi": false,
   "singleQuote": true
 }

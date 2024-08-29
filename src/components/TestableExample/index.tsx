@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './index.module.css'
 
-const TestableExample = () => (
-  <main>
-    <h1>Test me!</h1>
+const TestableExample = ({ title = 'Test me!' }: { title: string }) => (
+  <main className={styles.main}>
+    <h1 className={styles.title}>{title}</h1>
   </main>
 )
 
