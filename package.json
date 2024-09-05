@@ -7,17 +7,12 @@
     "start": "next start",
     "dev": "next dev",
     "lint": "next lint",
-    
     "eslint": "eslint eslint.config.mjs",
-    
     "prepare": "husky",
-    
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
-    
     "generate": "npx plop --plopfile generators/plopfile.mjs",
-    
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -47,7 +42,6 @@
     "@types/react-dom": "^18.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.7",
-    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-storybook": "^0.8.0",
     "globals": "^15.9.0",
@@ -56,7 +50,6 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.9",
     "plop": "^4.0.1",
-    "prettier": "3.3.3",
     "storybook": "^8.2.9",
     "ts-node": "^10.9.2",
     "typescript": "^5",

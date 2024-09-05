@@ -1,8 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"]
+    "extends": [
+        "next/core-web-vitals"
+    ]
 }
-
-
 /* From https://github.com/React-Avancado/boilerplate-apps-router/commit/5188c3e0e7be5951defde2823f73a5e6427aa7e6
 {
     "env": {

@@ -7,7 +7,6 @@ import { FlatCompat } from '@eslint/eslintrc'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 import pluginReact from 'eslint-plugin-react'
-import eslintConfigPrettier from 'eslint-config-prettier'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -18,12 +17,11 @@ const compat = new FlatCompat({
 })
 const config = [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { ignores: ["generators/"] },
+  { ignores: ["generators/", ".next/"] },
   { languageOptions: { globals: globals.browser } },
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   ...compat.extends('next/core-web-vitals'),
-  eslintConfigPrettier,
   {
     rules: {
       'react-hooks/rules-of-hooks': 'error',
